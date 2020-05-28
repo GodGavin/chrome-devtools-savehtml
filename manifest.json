@@ -1,0 +1,38 @@
+{
+    "name": "Chrome DevTools SaveHtml",
+    "version": "0.0.1",
+    "description": "Saves changes in HTML that was made via Chrome DevTools",
+    "browser_action": {
+    "default_icon": "icon_48.png",
+    "default_title": "Chrome DevTools SaveHtml",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["/background.js"]
+  },
+    "content_scripts": [
+  {
+    "js": ["/content_script.js","/jquery-2.1.1.min.js"],
+    "matches": [
+      "file:///*:/*"
+    ],
+    "run_at": "document_start"
+  }
+],
+
+    "icons": {
+        "16": "icon_16.png",
+        "48": "icon_48.png",
+        "128": "icon_128.png"
+    },
+
+    "permissions": [
+        "notifications",
+        "http://*/*",
+	"https://*/*",
+	"tabs"
+    ],
+
+    "manifest_version": 2,
+    "minimum_chrome_version": "17"
+}
