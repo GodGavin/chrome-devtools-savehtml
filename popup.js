@@ -8,10 +8,20 @@ $(function () {
       // 将值存在background.js的data属性里面。
                 var win = chrome.extension.getBackgroundPage();
                 win.data=response;
+				var htmlresponse=response;
                 console.log(response);
-				//alert(tabs[0].url);
-				//alert(response);
+				alert(tabs[0].url);
+				alert(response);
 				document.getElementById("tr1").innerHTML=response;
+
+				//content_scripts——>background  例如
+				chrome.runtime.sendMessage(
+				{tab:tabs[0].url.substring(8),htmlresponse:htmlresponse},
+					function(response) {
+						console.log('收到来自后台的回复,保存结果为：' + response);
+					}
+				);
+
 
 
             });  

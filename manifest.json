@@ -1,6 +1,6 @@
 {
     "name": "Chrome DevTools SaveHtml",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Saves changes in HTML that was made via Chrome DevTools",
     "browser_action": {
     "default_icon": "icon_48.png",
