@@ -19,17 +19,19 @@ var app = express();
 	// if(pathname=='/upload'){
 
 		app.use(bodyParser.json());
-		app.use(bodyParser.urlencoded({extended: false}));
+		//app.use(bodyParser.urlencoded({extended: false}));
 
 		app.post("/upload",function(req,res){
 		console.log('server收到的req.body:'+req.body);
-		var post=JSON.stringify(req.body);
+		//var posstringify=JSON.stringify(req.body);
+		//var	postparse=JSON.parse(posstringify);
 		var saveresult='';
-		 console.log('server收到的post参数:'+post);
-         console.log('server收到的网址'+JSON.stringify(req.body.tab));
-         console.log('server收到的html:'+JSON.stringify(req.body.htmlresponse));
+		 //console.log('server收到的postparse参数:'+postparse);
+		 //console.log('server收到的postposstringify参数:'+posstringify);
 
-    	 fs.writeFile(JSON.stringify(req.body.tab).replace("\"","").replace("\"",""),JSON.stringify(req.body.htmlresponse), { 'flag': 'w' }, function(err) {
+         console.log('server收到的网址'+JSON.parse(JSON.stringify(req.body.tab)));
+         console.log('server收到的html:'+JSON.parse(JSON.stringify(req.body.htmlresponse)));
+    	 fs.writeFile(JSON.parse(JSON.stringify(req.body.tab)),JSON.parse(JSON.stringify(req.body.htmlresponse)), { 'flag': 'w' }, function(err) {
 	    if (err) {
             throw err;
 		    saveresult='写入失败'+err;
@@ -50,6 +52,6 @@ var app = express();
     //    res.end('404');
     //}
 
-	app.listen(8080, () => {
-    console.log('server savehtml running on 8080')
+	app.listen(9105, () => {
+    console.log('server savehtml running on 9105')
 });
