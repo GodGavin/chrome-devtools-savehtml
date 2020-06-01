@@ -7,7 +7,7 @@ $(function () {
       // 这里的回调函数接收到了要抓取的值，获取值得操作在下方content-script.js
       // 将值存在background.js的data属性里面。
                 var win = chrome.extension.getBackgroundPage();
-                win.data=response;
+                //win.data=response;
 				var htmlresponse=response;
                 console.log(response);
 				alert(tabs[0].url);
