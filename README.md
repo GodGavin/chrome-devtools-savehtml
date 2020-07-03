@@ -13,7 +13,7 @@ how to use it
   目前代码还很差,只是能运行的阶段,希望能得到你的star  
  # 使用步骤：
               1安装nodejs  
-              2下载之后，将nserver文件夹下的index.js 复制到node安装目录下
+              2下载之后，将server文件夹下的index.js 复制到node安装目录下
               3安装谷歌扩展,采用加载已解压的扩展程序的方法导入即可
               4cd node安装目录下,运行 node index (端口为9105，不要被占用)
               5接下来就可以用谷歌打开一个html用谷歌浏览器的开发者工具编辑,点击浏览器相应的chrome-devtools-savehtml图标 弹出savehtml按钮，单击即可保存到源html文件中
