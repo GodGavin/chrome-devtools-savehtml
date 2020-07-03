@@ -1,6 +1,6 @@
 # chrome-devtools-savehtml
 use chrome-devtools to edit and save html with this samll tools
-how to use it
+how to use it/n
   1:install node.js;
   2:download this tool,copy server/index.js to where you installed you node;
   3:install chrome exentions on your chrome 
