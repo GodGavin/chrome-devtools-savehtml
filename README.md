@@ -2,10 +2,10 @@
 use chrome-devtools to edit and save html with this samll tools  
 how to use it  
   1:install node.js;  
-  2:download this tool,copy server/index.js to where you installed you node;  
-  3:install chrome exentions on your chrome  
+  2:download this tool,copy server/index.js to Folder root where you installed you node.js;  
+  3:install chrome exentions on your chrome(by import files)  
   4:cd to your node.js Folder root,run node index  
-  5:you can open a html by your chrome,and edit it in chrome-devtools, Click the chrome-devtools-savehtml browser extension icon to save the changes in your original file  
+  5:you can open a html by your chrome,and edit it in chrome-devtools, Click the chrome-devtools-savehtml browser extension icon to save the changes.  
 ****
 # 这是一个可以使用谷歌浏览器的开发者工具编辑html并保存的小工具 chrome-devtools-savehtml  
   谷歌浏览器开发者工具可以很好地调试前端页面 但是无法实时保存,谷歌worksapce是一种方案,但仍有各种的不足,  
