@@ -18,3 +18,4 @@ how to use it
               4cd node安装目录下,运行 node index (端口为9105，不要被占用)
               5接下来就可以用谷歌打开一个html用谷歌浏览器的开发者工具编辑,点击浏览器相应的chrome-devtools-savehtml图标 弹出savehtml按钮，单击即可保存到源html文件中
   
+# PS不太清楚咋把提交的暴躁提示去掉 见谅
