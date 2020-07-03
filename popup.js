@@ -10,8 +10,8 @@ $(function () {
                 //win.data=response;
 				var htmlresponse=response;
                 console.log(response);
-				alert(tabs[0].url);
-				alert(response);
+				//alert(tabs[0].url);
+				//alert(response);
 				document.getElementById("tr1").innerHTML=response;
 
 				//content_scripts——>background  例如
